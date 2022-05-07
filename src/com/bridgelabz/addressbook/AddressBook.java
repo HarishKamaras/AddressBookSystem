@@ -36,4 +36,14 @@ public class AddressBook {
         contacts.setEmail(email);
         contactsArrayList.add(contacts);
     }
+    public void editContacts(){
+        System.out.println("enter the first name to edit: ");
+        String firstName = scan.next();
+        for (Contacts contact:contactsArrayList) {
+            if(firstName.equals(contact.getFirstName())){
+                contact.editContacts();
+                break;
+            }
+        }
+    }
 }

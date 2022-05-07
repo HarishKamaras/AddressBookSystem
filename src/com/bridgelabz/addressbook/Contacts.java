@@ -1,5 +1,9 @@
 package com.bridgelabz.addressbook;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Contacts {
     private String firstName;
     private String lastName;
@@ -74,6 +78,37 @@ public class Contacts {
         this.email = email;
     }
 
+    static Scanner scan = new Scanner(System.in);
+    List<Contacts> contactsArrayList = new ArrayList<Contacts>();
+    public void editContacts(){
+        Contacts contacts = new Contacts();
+        System.out.println("FirstName: ");
+        String firstName = scan.next();
+        setFirstName(firstName);
+        System.out.println("LastName: ");
+        String lastName = scan.next();
+        setLastName(lastName);
+        System.out.println("Address: ");
+        String address = scan.next();
+        setAddress(address);
+        System.out.println("City: ");
+        String city = scan.next();
+        setState(city);
+        System.out.println("State: ");
+        String state = scan.next();
+        setState(state);
+        System.out.println("Zip: ");
+        String zip = scan.next();
+        setState(zip);
+        System.out.println("phone: ");
+        String phone = scan.next();
+        setState(phone);
+        System.out.println("Email: ");
+        String email = scan.next();
+        setState(email);
+        System.out.println("New edited row"+toString());
+        contactsArrayList.add(contacts);
+    }
     @Override
     public String toString() {
         return "Contacts{" +

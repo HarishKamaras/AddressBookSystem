@@ -10,5 +10,12 @@ public class AddressBookMain {
         for (Contacts contacts : addressBook.contactsArrayList) {
             System.out.println("The" + contacts);
         }
+        addressBook.editContacts();
+        System.out.println("After editing: ");
+        System.out.println("*********************");
+        for (Contacts contacts:addressBook.contactsArrayList) {
+            System.out.println("the"+contacts);
+        }
+        System.out.println("*********************");
     }
 }
