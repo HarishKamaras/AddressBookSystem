@@ -5,5 +5,10 @@ public class AddressBookMain {
         System.out.println("Welcome to Address Book System");
         AddressBook addressBook = new AddressBook();
         addressBook.addContact();
+        addressBook.addContact();
+        //UC2 add contacts
+        for (Contacts contacts : addressBook.contactsArrayList) {
+            System.out.println("The" + contacts);
+        }
     }
 }
