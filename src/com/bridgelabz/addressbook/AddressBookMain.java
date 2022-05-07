@@ -10,6 +10,7 @@ public class AddressBookMain {
         for (Contacts contacts : addressBook.contactsArrayList) {
             System.out.println("The" + contacts);
         }
+        //UC3 edit contacts
         addressBook.editContacts();
         System.out.println("After editing: ");
         System.out.println("*********************");
