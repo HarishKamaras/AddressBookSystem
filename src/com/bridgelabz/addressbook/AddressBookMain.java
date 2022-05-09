@@ -18,7 +18,7 @@ public class AddressBookMain {
             System.out.println("the"+contacts);
         }
         System.out.println("*********************");
-
+//
         //UC4 delete users
         addressBook.deleteContacts();
         for (Contacts contacts:addressBook.contactsArrayList) {
