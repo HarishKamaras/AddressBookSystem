@@ -8,6 +8,14 @@ import java.util.Scanner;
 public class AddressBook {
     static Scanner scan = new Scanner(System.in);
     List<Contacts> contactsArrayList = new ArrayList<Contacts>();
+    String addressBookName;
+    public String getAddressBookName() {
+        return addressBookName;
+    }
+
+    public void setAddressBookName(String addressBookName) {
+        this.addressBookName = addressBookName;
+    }
     public void addContact(){
         Contacts contacts = new Contacts();
         System.out.println("FirstName: ");
