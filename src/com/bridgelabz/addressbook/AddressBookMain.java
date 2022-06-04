@@ -87,7 +87,7 @@ public class AddressBookMain {
                             char c2 = sc.next().charAt(0);
 
                             if(c2== 'y'|| c2=='Y'){
-                                wantToDeleteContact=true;
+                                wantToEditContact=true;
                             }
                             else{
                                 break;
